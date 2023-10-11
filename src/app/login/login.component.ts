@@ -12,10 +12,12 @@ export class LoginComponent {
 
   constructor() {}
 
-  onSubmit() {
-    if (this.username.length == 0 || this.password.length == 0) {
-      this.error = 'Please enter your username and password';
+  validation() {
+    if (this.username.length === 0 || this.password.length === 0) {
+      console.log('false');
+      this.error = 'Error';
     } else {
+      console.log('true');
       this.error = 'ok';
     }
   }

@@ -1,0 +1,14 @@
+form {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+div {
+  color: red;
+}
+label {
+  display: flex;
+  flex-direction: column;
+}
