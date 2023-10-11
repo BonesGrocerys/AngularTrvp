@@ -1,0 +1,15 @@
+<div>
+  <h1>Авторизация</h1>
+  <form>
+    <div>
+      <label for="username">Login:</label>
+      <input [(ngModel)]="username" placeholder="Enter your name" />
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input [(ngModel)]="password" placeholder="Password" />
+    </div>
+    <button type="submit" (click)="onSubmit()">Войти</button>
+    <div *ngIf="error" style="color: red">{{ error }}</div>
+  </form>
+</div>
